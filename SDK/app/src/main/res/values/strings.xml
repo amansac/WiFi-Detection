@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SDK</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="heading">Wi-Fi Service</string>
+    <string name="startButtonText">Start the Service</string>
+    <string name="stopButtonText">Stop the Service</string>
+</resources>
