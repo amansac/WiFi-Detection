@@ -145,7 +145,7 @@ public class MyService extends Service {
                 .build();
 
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
-                new Intent(this, MainActivity.class), PendingIntent.FLAG_UPDATE_CURRENT);
+                new Intent(this, WifiActivity.class), PendingIntent.FLAG_UPDATE_CURRENT);
 
 
         notificationBuilder.setContentIntent(contentIntent);

@@ -21,7 +21,7 @@ public class ActionActivity2 extends AppCompatActivity {
         btnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Util.onConnected();
             }
         });
 
@@ -33,4 +33,5 @@ public class ActionActivity2 extends AppCompatActivity {
         });
 
     }
+
 }

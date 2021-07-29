@@ -21,7 +21,7 @@ public class ActionActivity extends AppCompatActivity {
         btnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Util.onDisconnected();
             }
         });
 
