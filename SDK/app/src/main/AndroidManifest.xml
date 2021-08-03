@@ -18,11 +18,11 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault">
         <activity
-            android:name=".ActionActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:name=".ActionActivity" />
+<!--            android:theme="@style/Theme.AppCompat.NoActionBar" />-->
         <activity
-            android:name=".ActionActivity2"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:name=".ActionActivity2" />
+<!--            android:theme="@style/Theme.AppCompat.NoActionBar" />-->
 
         <service
             android:name=".MyService"
@@ -46,7 +46,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
             </intent-filter>
         </activity>
     </application>

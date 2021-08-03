@@ -1,12 +1,13 @@
 package com.aman.sdk;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ActionActivity extends AppCompatActivity {
+public class ActionActivity extends FragmentActivity {
 
     Button btnNo,btnYes;
 
@@ -21,13 +22,14 @@ public class ActionActivity extends AppCompatActivity {
         btnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Util.onDisconnected();
+                finish();
             }
         });
 
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Util.onDisconnected();
                 finish();
             }
         });

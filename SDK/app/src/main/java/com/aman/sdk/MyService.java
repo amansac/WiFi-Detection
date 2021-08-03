@@ -83,11 +83,12 @@ public class MyService extends Service {
         if(isAvailable) {
             Log.d("WIFI",  " Connected - Aman " );
             if(prevState == false) {
+                prevState = true;
+                Log.d("Msg","Connected and prevState is false");
                 startForeground();
                 Intent intent = new Intent(this, ActionActivity2.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-                prevState = true;
             }
             else {
                 NotificationManager notifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
@@ -97,11 +98,12 @@ public class MyService extends Service {
         else{
             Log.d("WIFI",  " Disconnected - Aman " );
             if(prevState == true) {
+                prevState = false;
+                Log.d("Msg","Disconnected and prevState is true");
                 startForeground();
                 Intent intent = new Intent(this, ActionActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-                prevState = false;
             }
             else {
                 NotificationManager notifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
